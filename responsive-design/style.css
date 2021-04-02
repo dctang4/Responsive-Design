@@ -1,0 +1,134 @@
+* {
+    margin:0;
+    box-sizing: border-box;
+  }
+
+body {
+    height: 100%;
+    width: 100%;
+    font-family: "Montserrat";
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+header h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #F38928;
+    font-size: 28px;
+    padding: 10px;
+}
+
+header section {
+    display: none;
+}
+
+nav {
+    background-color: #F1F1F1;
+}
+
+nav ul {
+    list-style: none;
+    display: none;
+}
+
+nav i.fas.fa-bars {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+p {
+    padding: 15px;
+    width: 100%;
+}
+
+main {
+    border-top: 15px solid white;
+    max-width: 100%;
+}
+
+main .section1 p.content {
+    background-color: #7DD31F;
+    color: white;
+}
+
+main .section2 p.more{
+    background-color: #EA5B4C;
+    color: white;
+}
+
+main .section3 p.even {
+    background-color: #45AEFF;
+    color: white;
+}
+
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+    header h1 {
+        font-size: 36px;
+    }
+
+    nav ul {
+        display: flex;
+        justify-self: left;
+        padding: 15px;
+    }
+
+    nav ul li {
+        padding: 0px 25px;
+    }
+    
+    nav i.fas.fa-bars {
+        display: none;
+    }
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-grow: 1;
+    }
+
+    section{
+        min-width: 384px;
+        flex-grow: 1;
+    }
+}
+
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+    header h1 {
+        font-size: 100px;
+        line-height: 1;
+    }
+
+    header section {
+        display: block;
+    }
+
+    header section div {
+        padding: 10px 10px;
+        font-size: 15px
+    }
+
+    header section .responsive {
+        background-color: black;
+        color: #F38928;
+        font-size: 20px;
+    }
+
+    header section div span {
+        text-transform: uppercase;
+        color: #EE2F33;
+        font-weight: 900;
+        font-size: 20px; 
+    }
+
+    section{
+        min-width: 0px;
+    }
+}
